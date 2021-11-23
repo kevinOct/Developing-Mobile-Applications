@@ -6,7 +6,7 @@
     <Title color="#3F414E"/>
     <Header title="Meet people next to you"/>
     
-    <Button text="SIGN UP" color="#8E97FD"/>
+    <Button @btn-click="goToSignUp" text="SIGN UP" color="#8E97FD"/>
     <LinkToLogInPage/>
     </div>
 </template>
@@ -24,6 +24,12 @@ export default {
     Header,
     Button,
     LinkToLogInPage,
+  },
+  
+  methods: {
+    goToSignUp() {
+      this.$router.replace('/signup')
+    }
   }
 
 }
