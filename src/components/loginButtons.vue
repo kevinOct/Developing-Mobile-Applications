@@ -1,6 +1,6 @@
 <template>
-    <Button text="CONTINUE WITH FACEBOOK"/>
-    <Button text="CONTINUE WITH GOOGLE" color= "white" font_color= "black"/>
+    <Button :showIcon="true" icon="logo-facebook" icon_color="white" text="CONTINUE WITH FACEBOOK"/>
+    <Button :showIcon="true" icon="logo-google" text="CONTINUE WITH GOOGLE" color= "white" font_color= "black"/>
     <p>OR LOG IN WITH EMAIL</p>
 </template>
 
